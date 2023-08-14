@@ -1,55 +1,47 @@
-# Coverflex Frontend Challenge
+Hello!
 
-Hello dear frontend developer!
+During this code interview, you will be working on a React application together with us.
 
-Your Project Manager needs you to build an app that can be used by company employees to self-manage their benefits.
-Our Designer is really busy right now, so you'll also need to help us on the UI side. However, you should focus on the UX side of it, because we wanted to start testing out inside the company. But don't worry, our Backend team has already a service up and running for you to use.
-Each employee has a total of 500 FlexPoints, that they can spend on a list of available benefits.
+The session will last one hour, with the last 15 minutes reserved for questions from both sides.
 
-Our Backend Developer already develop these API endpoints:
+This challenge helps us see how you apply your technical skills and approach problems. It's not about finding the "right" answer, but how you arrive at it. We're excited to work with you on this challenge!
 
-- `GET /api/users/:user_id`
-  - returns a single user
-  - if user_id doesn't exist, it creates a new user
-  - output `{"user": {"user_id": "johndoe", "data": {"balance": 500, "product_ids": [...]}}}`
-- `GET /api/products`
-  - returns a list of all products
-  - output `{"products": [...] }`
-- `POST /api/orders`
-  - creates a new order
-  - input `{"order": {"items": ["product-1", "product-2"], "user_id": "johndoe"}}`
-  - output 200 `{"order": {"order_id": "123", "data": {"items": [...], "total": 500}}}`
-  - output 400 `{"error": "products_not_found"}`
-  - output 400 `{"error": "products_already_purchased"}`
-  - output 400 `{"error": "insufficient_balance"}`
+Here, you have a base repository with the technologies you will use during the session. It’s crucial that you can run the application and have everything installed and set **before** our call.
 
-Build a UI to cover the following use cases:
+### **Technologies**
 
-- Sign in
-  - users should be able to sign in just with a username
-- Placing an order
-  - users should be able to browse all products
-  - users should be able to order multiple products
-  - users aren't allowed to order a product previously ordered
-  - users should be able to see the already ordered products
-  - users should be able to see the order total before ordering
-  - users should be able to see current balance
-  - users aren't allowed to place order which makes their balance below zero
+- **`React`** with **`Typescript`**
+- **`[Node.js](https://nodejs.org/en)`**
+- **`[yarn](https://yarnpkg.com/)`**
+- **`[Vite](https://vitejs.dev/)`**
+- **`Git`**
+- **`Fetch api`** or **`Axios`**
+- **`Jest`** with **`react-testing-library`**
+- **[Live Share plugin for VSCode](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)**
 
-**Notes:**
+### Preparation
 
-- You're free to use whatever means and technology to achieve the goal
+- You will need a version of Node installed (v16-v18) and yarn as our package manager of choice.
+- After cloning the repo, start by installing the dependencies with the command **`yarn install`**.
+- After that, you should be able to run the application with the command **`yarn run dev`**.
+- Ensure you can run the testing suite with the command **`yarn run test`**.
+- Lastly, we will ask you to install the Live Share extension so we can pair and solve this exercise together. You will probably handle most of the work. If you prefer to use any other app for pairing, that's fine, but please let us know in advance so we can set it up too.
+- During the call, you will also need to share your entire screen. Ensure you have the appropriate permissions on your Google Meet browser beforehand.
 
-# Backend service:
+### **The Challenge**
 
-Our Backend Developer has kindly provided you a simple Phoenix server for you to test out your app.
-You can access it at: https://coverflex-exercise.fly.dev/
+At the start of our meeting, we'll address any questions you might have. We'll also show you a working version of the app and a design of the component you will need to build for step 2.
 
-# Frontend app:
+After that, you'll be able to **pull a new git branch** onto your local machine from our base project, which we will complete together. We've already done some tasks for you, so you don't need to build everything from scratch.
 
-We provided you an empty React + Typescript boilerplate without additional dependencies so you can start coding right away. To start:
-- Clone this repo to your local machine;
-- Run `yarn` to install dependencies;
-- Start the development server with `yarn dev`
+The challenge is structured in four small parts:
 
-Good Luck! 🙌
+1. Fetching some data from an API endpoint and displaying the data on the screen.
+2. Building a small React component and passing the data you fetched into it.
+3. Manipulating some data that will change what appears on the screen.
+4. Last but not least, we will conduct some tests to ensure everything works as it should!
+
+And that's it!
+If you have any doubts regarding the instructions or the installation, send us an email, and we'll get back to you as soon as we can! 
+
+Best of luck 🚀
