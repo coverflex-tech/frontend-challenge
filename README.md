@@ -1,3 +1,5 @@
+# Coverflex Frontend Challenge
+
 Hello!
 
 During this code interview, you will be working on a React application together with us.
@@ -8,7 +10,7 @@ This challenge helps us see how you apply your technical skills and approach pro
 
 Here, you have a base repository with the technologies you will use during the session. It’s crucial that you can run the application and have everything installed and set **before** our call.
 
-### **Technologies**
+## **Technologies**
 
 - **`React`** with **`Typescript`**
 - **`[Node.js](https://nodejs.org/en)`**
@@ -19,7 +21,7 @@ Here, you have a base repository with the technologies you will use during the s
 - **`Jest`** with **`react-testing-library`**
 - **[Live Share plugin for VSCode](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)**
 
-### Preparation
+## Preparation
 
 - You will need a version of Node installed (v16-v18) and yarn as our package manager of choice.
 - After cloning the repo, start by installing the dependencies with the command **`yarn install`**.
@@ -28,7 +30,7 @@ Here, you have a base repository with the technologies you will use during the s
 - Lastly, we will ask you to install the Live Share extension so we can pair and solve this exercise together. You will probably handle most of the work. If you prefer to use any other app for pairing, that's fine, but please let us know in advance so we can set it up too.
 - During the call, you will also need to share your entire screen. Ensure you have the appropriate permissions on your Google Meet browser beforehand.
 
-### **The Challenge**
+## **The Challenge**
 
 At the start of our meeting, we'll address any questions you might have. We'll also show you a working version of the app and a design of the component you will need to build for step 2.
 
