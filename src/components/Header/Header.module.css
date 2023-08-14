@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  width: 100%;
+  height: 4.5rem;
+  padding: 1.2rem 5rem 1.2rem 5rem;
+  margin-bottom: 5rem;
+  z-index: 1000;
+  box-shadow: 0 0.6rem 0.3rem -0.2rem rgba(var(--color-black-rgb), 0.05);
+}
+
+.header > div {
+  font-size: 1.6rem;
+  font-weight: semibold;
+}

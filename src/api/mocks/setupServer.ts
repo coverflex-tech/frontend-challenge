@@ -1,3 +1,6 @@
 import { setupServer } from 'msw/node';
+import { getDiscounts } from './discounts';
 
-export const server = setupServer();
+const handlers = [...getDiscounts];
+
+export const server = setupServer(...handlers);

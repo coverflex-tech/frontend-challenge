@@ -1,5 +1,28 @@
-.title {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: grey;
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 10rem 5rem 3rem 5rem;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.searchButton {
+  max-width: 6rem;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }

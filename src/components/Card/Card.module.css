@@ -1,0 +1,21 @@
+.host {
+  display: inline-block;
+  background-color: var(--color-white);
+  border-radius: 2.4rem;
+  box-shadow: 0 0.8rem 1.6rem -0.4rem rgba(var(--color-black-rgb), 0.08);
+  transition: box-shadow 0.15s ease-in-out;
+  padding: 2rem;
+}
+
+.host:hover {
+  box-shadow: 0 1.6rem 3.2rem -0.8rem rgba(var(--color-black-rgb), 0.08);
+}
+
+.host.noHover:hover {
+  box-shadow: 0 0.8rem 1.6rem -0.4rem rgba(var(--color-black-rgb), 0.08);
+}
+
+.host.disabled,
+.host.disabled:hover {
+  box-shadow: none;
+}

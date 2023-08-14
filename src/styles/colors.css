@@ -1,0 +1,137 @@
+:root {
+  --color-black: #000000;
+  --color-black-rgb: 0, 0, 0;
+
+  --color-grey-0: #374858;
+  --color-grey-0-rgb: 55, 72, 88;
+  --color-grey-1: #526476;
+  --color-grey-1-rgb: 82, 100, 118;
+  --color-grey-2: #7e8e9f;
+  --color-grey-3: rgba(82, 100, 118, 0.6);
+  --color-grey-4: rgba(126, 142, 159, 0.5);
+  --color-grey-5: rgba(126, 142, 159, 0.25);
+
+  --color-white: #ffffff;
+  --color-white-rgb: 255, 255, 255;
+
+  --color-state--filled: #99bfc0;
+  --color-state--info: rgba(78, 163, 193, 0.6);
+  --color-state--success: #71c9c4;
+  --color-state--success-rgb: 113, 201, 196;
+  --color-state--warning: #ffaa6c;
+  --color-state--warning-rgb: 255, 170, 108;
+  --color-state--error: #ea7f85;
+  --color-state--error-rgb: 234, 127, 133;
+  --color-state--accent: #ff8b81;
+  --color-state--pending-warning: #fff7f1;
+  --color-state--pending-warning-rgb: 255, 247, 241;
+
+  --color-text-error: #ff7777;
+  --color-text-error-rgb: 255, 119, 119;
+
+  --color-background: #f7f8fa;
+  --color-background--benefits: rgba(253, 189, 154, 0.4);
+  --color-background--meal: rgba(209, 229, 199, 0.4);
+  --color-background--discounts: rgba(224, 223, 240, 0.4);
+  --color-background--insurance: rgba(149, 200, 218, 0.4);
+  --color-background--badge: rgba(188, 218, 229, 0.4);
+  --color-background--disclaimer: #eff2f3;
+
+  --color-modal-background: rgba(55, 72, 88, 0.95);
+
+  --color-icon--benefits: #fdbd9a;
+  --color-icon--budgets: #f0a0b3;
+  --color-icon--budgets-rgb: 240, 160, 179;
+  --color-icon--meal: rgba(78, 163, 193, 0.6);
+  --color-icon--insurance: #bfdbb1;
+  --color-icon--discounts: #9e98ee;
+
+  --gradient-accent: linear-gradient(315deg, #fe766b 0%, #ff8b81 100%);
+  --gradient-sunrise: linear-gradient(137.76deg, #bcdae5 8.17%, #f5cbb5 92.64%);
+  --gradient-daytime: linear-gradient(136.44deg, #bcdae5 8.84%, #cbe2da 95.88%);
+  --gradient-sunset: linear-gradient(138.51deg, #bcdae5 8.38%, #bbaebf 98.83%);
+  --gradient-night: linear-gradient(138.77deg, #435770 7.85%, #2d344b 98.35%);
+  --gradient-success: linear-gradient(
+      0deg,
+      rgba(113, 201, 196, 0.1),
+      rgba(113, 201, 196, 0.1)
+    ),
+    #ffffff;
+  --gradient-error: linear-gradient(
+      0deg,
+      rgba(234, 127, 133, 0.1),
+      rgba(234, 127, 133, 0.1)
+    ),
+    #ffffff;
+  --gradient-inline-loading: linear-gradient(
+    to right,
+    #f6f6f6 10%,
+    rgba(255, 255, 255, 0.8) 50%,
+    #f6f6f6 90%
+  );
+
+  --color-table-row-background--hover: rgba(244, 248, 255, 0.8);
+  --color-table-context-action-background--hover: rgba(222, 235, 240, 0.4);
+
+  --color-file-preview-outline: #eff2f6;
+
+  --color-benefits: 253, 189, 154;
+
+  --color-action-primary: #c3dedf;
+  --color-action-primary-light: #c3dedf8a;
+  --color-action-primary-rgb: 195, 222, 223;
+  --color-action-primary--bold: #99bfc0;
+  --color-action-primary--disabled: rgba(var(--color-action-primary-rgb), 0.3);
+
+  --color-action-text-primary: var(--color-grey-1);
+  --color-action-text-primary--disabled: rgba(var(--color-grey-1-rgb), 0.2);
+  --color-action-loader-primary: var(--color-grey-1);
+
+  --color-action-secondary: #f8fbfc;
+  --color-action-secondary-rgb: 248, 251, 252;
+  --color-action-secondary--bold: #eff2f3;
+  --color-action-secondary--disabled: rgba(
+    var(--color-action-secondary-rgb),
+    0.2
+  );
+
+  --color-action-text-secondary: var(--color-grey-1);
+  --color-action-text-secondary--bold: var(--color-grey-1);
+  --color-action-text-secondary--disabled: rgba(var(--color-grey-1-rgb), 0.2);
+  --color-action-loader-secondary: var(--color-grey-1);
+
+  --color-action-text-tertiary: var(--color-action-primary--bold);
+  --color-action-text-tertiary--bold: var(--color-action-primary--bold);
+  --color-action-text-tertiary--disabled: rgba(var(--color-grey-1-rgb), 0.2);
+  --color-action-loader-secondary: var(--color-action-primary--bold);
+
+  --color-selection--default: rgba(var(--color-action-primary-rgb), 0.5);
+  --color-selection--active: var(--color-action-primary--bold);
+  --color-selection--disable: var(--color-grey-5);
+  --color-selection-text: var(--color-grey-1);
+
+  --color-avatar-background: rgba(var(--color-benefits), 0.4);
+
+  --color-step-border--current: #99bfc0;
+  --color-step-border--disabled: #e2e3eb;
+  --color-step-border--completed: #c3dedf;
+  --color-step-border--warning: rgba(255, 170, 108, 0.2);
+  --color-step-check-color: #fe766b;
+
+  --color-file-preview-background: rgba(195, 222, 223, 0.1);
+  --color-file-preview-border: #c3dedf;
+  --color-file-preview-icon: rgba(195, 222, 223, 0.3);
+  --color-file-preview-action: linear-gradient(
+      0deg,
+      rgba(130, 170, 171, 0.4),
+      rgba(130, 170, 171, 0.4)
+    ),
+    #ffffff;
+
+  --color-file-drop-background: linear-gradient(
+      0deg,
+      rgba(195, 222, 223, 0.4),
+      rgba(195, 222, 223, 0.4)
+    ),
+    #f7f8fa;
+}

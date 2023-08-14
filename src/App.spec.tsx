@@ -3,5 +3,5 @@ import { App } from './App';
 
 test('renders main page', () => {
   render(<App />);
-  expect(screen.getByText('Coverflex Challenge')).toBeInTheDocument();
+  expect(screen.getByText('Coverflex Frontend Challenge')).toBeInTheDocument();
 });

@@ -14,7 +14,7 @@ configure({
 
 // MSW Server Boot
 beforeAll(() => {
-  server.use();
+  server.listen();
 });
 
 afterEach(async () => {
