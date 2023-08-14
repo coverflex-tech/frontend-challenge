@@ -24,9 +24,7 @@ Here, you have a base repository with the technologies you will use during the s
 ## Preparation
 
 - You will need a version of Node installed (v16-v18) and yarn as our package manager of choice.
-- After cloning the repo, start by installing the dependencies with the command **`yarn install`**.
-- After that, you should be able to run the application with the command **`yarn run dev`**.
-- Ensure you can run the testing suite with the command **`yarn run test`**.
+- After cloning the repo, start by running the command **`yarn validate`**. This command will install the dependencies, run typecheck on the project, and finally run the test suite. This will make sure you have everything ready and set up for the start of the interview.
 - Lastly, we will ask you to install the Live Share extension so we can pair and solve this exercise together. You will probably handle most of the work. If you prefer to use any other app for pairing, that's fine, but please let us know in advance so we can set it up too.
 - During the call, you will also need to share your entire screen. Ensure you have the appropriate permissions on your Google Meet browser beforehand.
 

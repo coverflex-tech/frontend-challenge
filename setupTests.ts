@@ -39,19 +39,6 @@ Object.defineProperty(window, 'matchMedia', {
   })),
 });
 
-Object.defineProperty(window, 'analytics', {
-  writable: true,
-  value: {
-    track: jest.fn(),
-    page: jest.fn(),
-  },
-});
-
-Object.defineProperty(window, 'zE', {
-  writable: true,
-  value: jest.fn(),
-});
-
 Object.defineProperty(window, 'localStorage', {
   writable: true,
   value: {
