@@ -1,7 +1,5 @@
-import './App.css';
+import css from './App.module.css';
 
-function App() {
-  return <div>Coverflex Challenge</div>;
-}
-
-export default App;
+export const App = () => {
+  return <div className={css.title}>Coverflex Challenge</div>;
+};
