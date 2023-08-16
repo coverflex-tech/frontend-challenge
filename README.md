@@ -13,9 +13,9 @@ Here, you have a base repository with the technologies you will use during the s
 ## **Technologies**
 
 - **`React`** with **`Typescript`**
-- **`[Node.js](https://nodejs.org/en)`**
-- **`[yarn](https://yarnpkg.com/)`**
-- **`[Vite](https://vitejs.dev/)`**
+- **[Node.js](https://nodejs.org/en)**
+- **[yarn](https://yarnpkg.com/)**
+- **[Vite](https://vitejs.dev/)**
 - **`Git`**
 - **`Fetch api`** or **`Axios`**
 - **`Jest`** with **`react-testing-library`**
