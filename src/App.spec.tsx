@@ -3,7 +3,7 @@ import { BenefitsListScreen } from './features/benefits/BenefitsListScreen';
 
 describe('BenefitsListScreen', () => {
   it('renders the benefits challenge screen', () => {
-    render(<BenefitsListScreen onOpenBenefit={() => undefined} />);
+    render(<BenefitsListScreen />);
 
     expect(screen.getByText('Coverflex Benefits Challenge')).toBeTruthy();
     expect(screen.getByTestId('benefits-screen')).toBeTruthy();
