@@ -2,46 +2,75 @@
 
 Hello!
 
-During this code interview, you will be working on a React application together with us.
+During this code interview, you will be working on a universal React application with us.
 
-The session will last one hour, with the last 15 minutes reserved for questions from both sides.
+The session lasts one hour, with the last 15 minutes reserved for questions from both sides.
 
-This challenge helps us see how you apply your technical skills and approach problems. It's not about finding the "right" answer, but how you arrive at it. We're excited to work with you on this challenge!
+This challenge helps us understand how you reason through frontend problems, collaborate in real time, and make technical decisions under realistic constraints.
 
-Here, you have a base repository with the technologies you will use during the session. It’s crucial that you can run the application and have everything installed and set **before** our call.
+## Technologies
 
-## **Technologies**
-
-- **`React`** with **`Typescript`**
-- **[Node.js](https://nodejs.org/en)**
-- **[yarn](https://yarnpkg.com/)**
-- **[Vite](https://vitejs.dev/)**
-- **`Git`**
-- **`Fetch api`** or **`Axios`**
-- **`Jest`** with **`react-testing-library`**
-- **[Live Share plugin for VSCode](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)**
+- **Expo**
+- **React Native** + **React Native Web**
+- **TypeScript**
+- **Node.js**
+- **pnpm**
+- **Fetch API** or **Axios**
+- **Jest** with **@testing-library/react-native**
+- **Git**
+- **Live Share plugin for VSCode**
 
 ## Preparation
 
-- You will need a version of Node installed (v16-v18) and yarn as our package manager of choice.
-- After cloning the repo, start by running the command **`yarn validate`**. This command will install the dependencies, run typecheck on the project, and finally run the test suite. This will make sure you have everything ready and set up for the start of the interview.
-- Lastly, we will ask you to install the Live Share extension so we can pair and solve this exercise together. You will probably handle most of the work. If you prefer to use any other app for pairing, that's fine, but please let us know in advance so we can set it up too.
-- During the call, you will also need to share your entire screen. Ensure you have the appropriate permissions on your Google Meet browser beforehand.
+- Install Node.js (LTS recommended) and `pnpm`.
+- Install dependencies and verify setup:
+  - `pnpm install`
+  - `pnpm validate`
+- During the interview, we will pair program. Please make sure your environment is ready before the call.
 
-## **The Challenge**
+## Running the project
 
-At the start of our meeting, we'll address any questions you might have. We'll also show you a working version of the app and a design of the component you will need to build for step 2.
+- `pnpm start` to start Expo dev tools
+- `pnpm web` to run in the browser
+- `pnpm android` to run on Android
+- `pnpm ios` to run on iOS
 
-After that, you'll be able to **pull a new git branch** onto your local machine from our base project, which we will complete together. We've already done some tasks for you, so you don't need to build everything from scratch.
+## Routing scaffold
 
-The challenge is structured in four small parts:
+This starter uses `expo-router` with an `app/` directory:
 
-1. Fetching some data from an API endpoint and displaying the data on the screen.
-2. Building a small React component and passing the data you fetched into it.
-3. Manipulating some data that will change what appears on the screen.
-4. Last but not least, we will conduct some tests to ensure everything works as it should!
+- `app/(tabs)/index.tsx` for the Home/List screen
+- `app/(tabs)/saved.tsx` for the Saved tab
+- `app/benefits/[id].tsx` for benefit detail
 
-And that's it!
-If you have any doubts regarding the instructions or the installation, send us an email, and we'll get back to you as soon as we can! 
+The Saved tab is intentionally scaffolded without state management so candidates can discuss and implement their preferred approach during the interview.
 
-Best of luck 🚀
+## Challenge Context
+
+This branch focuses on **benefits management** in a universal app setup.
+
+The challenge keeps the same interview flow:
+
+1. Fetch benefit data from an API endpoint.
+2. Build or extend a component that renders that data.
+3. Manipulate data (for example filter/sort/group) and reflect it in the UI.
+4. Discuss and implement a state-management approach for saving benefits across screens.
+5. Add tests to verify expected behavior.
+
+### Included scaffold
+
+- Domain types and mock objects:
+  - `src/domain/benefits/types.ts`
+  - `src/domain/benefits/mockBenefits.ts`
+  - `src/domain/benefits/mockUsers.ts`
+- API contracts and endpoint helpers:
+  - `src/api/contracts.ts`
+  - `src/api/endpoints.ts`
+
+Candidates can decide how to integrate data during the interview (`fetch`, another client, or local adapter).
+
+## Notes
+
+- The starter intentionally includes TODOs and a simple baseline UI.
+- The starter includes tab navigation (`Home`, `Saved`) plus a detail route.
+- The challenge logic is intentionally not pre-solved.

@@ -1,7 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import { App } from './App';
+import { render, screen } from '@testing-library/react-native';
+import { BenefitsListScreen } from './features/benefits/BenefitsListScreen';
 
-test('renders main page', () => {
-  render(<App />);
-  expect(screen.getByText('Coverflex Challenge')).toBeInTheDocument();
+describe('BenefitsListScreen', () => {
+  it('renders the benefits challenge screen', () => {
+    render(<BenefitsListScreen onOpenBenefit={() => undefined} />);
+
+    expect(screen.getByText('Coverflex Benefits Challenge')).toBeTruthy();
+    expect(screen.getByTestId('benefits-screen')).toBeTruthy();
+  });
 });

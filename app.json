@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Coverflex Frontend Challenge",
+    "slug": "coverflex-frontend-challenge",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android", "web"],
+    "userInterfaceStyle": "light",
+    "plugins": ["expo-router"]
+  }
+}

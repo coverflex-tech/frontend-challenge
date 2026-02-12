@@ -1,0 +1,58 @@
+import type { Benefit } from './types';
+
+export const mockBenefits: Benefit[] = [
+  {
+    id: 'benefit-1',
+    name: 'Meal Card',
+    category: 'meal',
+    isAvailable: true,
+    monthlyCost: 120,
+    description: 'Daily meal allowance paid through a dedicated card.',
+    provider: 'Coverflex',
+  },
+  {
+    id: 'benefit-2',
+    name: 'Public Transport Pass',
+    category: 'transport',
+    isAvailable: true,
+    monthlyCost: 40,
+    description: 'Monthly pass for metro, bus, and train lines.',
+    provider: 'City Mobility',
+  },
+  {
+    id: 'benefit-3',
+    name: 'Private Health Plan',
+    category: 'health',
+    isAvailable: true,
+    monthlyCost: 85,
+    description: 'Includes specialist appointments and diagnostics.',
+    provider: 'Healthy Life',
+  },
+  {
+    id: 'benefit-4',
+    name: 'Gym Membership',
+    category: 'wellness',
+    isAvailable: false,
+    monthlyCost: 30,
+    description: 'Access to partner gyms in major cities.',
+    provider: 'Move+',
+  },
+  {
+    id: 'benefit-5',
+    name: 'Learning Wallet',
+    category: 'learning',
+    isAvailable: true,
+    monthlyCost: 60,
+    description: 'Budget to spend on courses, books, and certifications.',
+    provider: 'SkillBridge',
+  },
+  {
+    id: 'benefit-6',
+    name: 'Life Insurance',
+    category: 'insurance',
+    isAvailable: false,
+    monthlyCost: 20,
+    description: 'Basic life insurance package for dependents.',
+    provider: 'SafeFuture',
+  },
+];
